@@ -11,8 +11,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 50;
     font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
+    font-variation-settings: "wdth" 100;
 }  
 
 .social-media-button {
@@ -28,11 +27,11 @@ body {
     background-color: var(--cor-vermelhor);
     border: 0;
     color: white;
-    width: 20%;
+    width: 100%;
     border-radius: 20px;
     padding: 10px;
     cursor: pointer;
-
+    text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
@@ -50,6 +49,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+  /* Centraliza os itens filhos horizontalmente */
+    text-align: center;
 }
 
 .flex-direction-colum {
@@ -62,11 +63,15 @@ body {
     max-width: 1200px;
 }
 
+.parent-container .button-app {
+    max-width: 50%;
+}
+
 .flex-index {
     position: absolute;
-    top: 140%;
+    top: 108%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,15 +79,6 @@ body {
     z-index: 2;
 }
 
-.flex-index {
-    bottom: -20px;
-    position: absolute;
-    transform: translateX(-50%);
-    gap: 20px;
-    z-index: 2;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-}
 
 .flex-container {
     max-width: 1200px;
@@ -109,6 +105,43 @@ body {
     margin-top: 5px;
 }
 
+/* Menu mobile */
+
+.mobile-menu-icon {
+    user-select: none;
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    user-select: none;
+    display: none;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    border-radius: 8px;
+    z-index: 40;
+}
+
+.mobile-menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.mobile-menu a:last-child {
+    border-bottom: none;
+}
+
+/* Menu desktop */
 .header {
     position: fixed; /* Fixa o header no topo */
     top: 0;
@@ -272,8 +305,8 @@ nav ul li a:hover {
     text-align: left;
 }
 
-.content-principal iframe {
-    width: 700px;
+iframe {
+    width: 100%;
     height: 450px;
     border-radius: 15px;
 }
@@ -281,7 +314,12 @@ nav ul li a:hover {
 .content-principal .video-container-flex-wraper {
     width: 100%;
     margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
 }
+
 
 .content-principal .foto-container-flex-wraper {
     width: 100%;
@@ -328,28 +366,29 @@ nav ul li a:hover {
 }
 
 .image-history-content {
-    width: 100%;
-    overflow-x: auto;
-    white-space: nowrap;
-    display: block;
-
     position: relative;
-    display: inline-block;
-    text-align: center;
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 500px; /* Ajuste a altura conforme necessário */
+    overflow-x: auto; /* Permite o scroll horizontal */
+    overflow-y: hidden; /* Remove o scroll vertical */
+    white-space: nowrap; /* Garante que os filhos não quebrem linha */
+    background: linear-gradient(135deg, #e0f7fa, #b3e5fc, #03a9f4, #0288d1, #01579b); /* Degradê colorido em diversos tons de azul */
+    display: flex;
+    justify-content: flex-start; /* Alinha a imagem ao início */
 }
 
-.image-history-content img {
-    width: 200%;
-    height: 200px;
+.image-top {
+    display: inline-block;
+    width: 100%; /* Preenche a largura do contêiner */
+    height: 100%; /* Preenche a altura do contêiner */
 }
 
 .image-bottom {
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%, -50%);
-    width: 200%;
-    height: auto;
+    display: inline-block;
+    height: auto; /* Mantém a proporção da imagem */
+    width: 200%; /* A imagem vai ocupar 200% da largura da tela, causando o scroll horizontal */
+    min-width: 100%; /* Garante que a imagem não seja menor que 100% da largura da tela */
+    margin-left: 0%; /* Alinha a imagem sem margens */
 }
 
 footer {
@@ -369,12 +408,13 @@ footer p {
 /* Container principal do mosaico */
 .mosaic-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Mantém 2 colunas */
     grid-template-rows: auto;
     gap: 15px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 100%; /* Garante que ocupe toda a largura */
+    max-width: 100%; /* Remove limitação de largura */
+    margin: 0; /* Remove margens */
+    padding: 0;
 }
 
 .mosaic-item {
@@ -465,6 +505,15 @@ footer p {
 }
 
 @media (max-width: 768px) {
+
+    .banner-principal h1 {
+        font-size: 15px;
+    }
+
+    .parent-container, .end-flex {
+        display: none;
+    }
+
     nav {
         flex-direction: column;
         text-align: center;
@@ -481,6 +530,20 @@ footer p {
     .mosaic-container {
         grid-template-columns: 1fr;
     }
+
+    .header-menu {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .product-01 {
+        flex: 1 1 100%; /* 1 coluna por linha em telas pequenas */
+        max-width: 100%;
+    }
+
 }
 
 :root {
@@ -493,4 +556,29 @@ footer p {
 /*ICONS*/
 i.fa-solid.fa-check {
     color: var(--cor-vermelhor);
+}
+
+.product-content {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 15px; 
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.product-01 {
+    flex: 1 1 calc(33.333% - 20px); /* Tamanho flexível para cada item (3 colunas por linha) */
+    max-width: calc(33.333% - 20px); /* Garante que cada item respeite o espaço disponível */
+    box-sizing: border-box; /* Inclui padding/borda no cálculo de largura */
+    text-align: center; /* Centraliza os elementos dentro do item */
+}
+
+.product-01 img {
+    width: 100%; /* Garante que a imagem ocupe todo o espaço do container pai */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    object-fit: cover; /* Ajusta a imagem sem distorcer */
 }

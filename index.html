@@ -30,7 +30,17 @@
             <a href="#about">Sobre</a>
             <a href="#contact">Contato</a>
         </nav>
+
+        <div class="mobile-menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
     </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="#contact">Contato</a>
+    </div>
 
     <main>
         <div class="banner-principal">
@@ -67,75 +77,69 @@
 
         <div class="end-flex"></div><!--end-flex-->
 
-        <div class="content-principal">
-            <div class="container">
-                <div class="flex-container ">
-                    <div class="flex-wraper">
-                        <div class="title-content-principal-right">
-                            <b>Apresentação</b>
-                            <div class="sublime-text"></div><!--sublime-text-->
-                            <p>A Bom Peixe leva para todo o Brasil o que há de melhor em peixes e frutos do mar. 
-                                Para preservar o sabor, garantir a qualidade e satisfazer os mais exigentes paladares, 
-                                utiliza processos automatizados e rígidos padrões até o produto chegar às mãos do 
-                                consumidor.</p>
-                        </div><!--title-content-principal-->
-                    </div><!--flex-wraper-->
-
-                    <div class="flex-wraper">
-                        <div class="video-container-flex-wraper">
-                            <iframe src="https://www.youtube.com/embed/_zaDraleFFA" 
-                                title="INSTITUCIONAL FRIGORIFICO FRIGOPESCA" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                referrerpolicy="strict-origin-when-cross-origin" 
-                                allowfullscreen>
-                            </iframe>
-                        </div><!--video-container-flex-wraper-->
-                    </div><!--flex-wraper-->
-                    
-                </div><!--flex-container-->
-            </div><!--content-principal-->
-
-            <div class="container">
-                <div class="flex-container ">
-                    <div class="flex-wraper">
-                        <div class="video-container-flex-wraper">
-                            <iframe width="917" 
-                                height="516" src="https://www.youtube.com/embed/BmEGBjJISJc" 
-                                title="Beneficiamento Frigopesca" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                referrerpolicy="strict-origin-when-cross-origin" 
-                                allowfullscreen>
-                            </iframe>
-                        </div><!--video-container-flex-wraper-->
-                    </div><!--flex-wraper-->
-
-                    <div class="flex-wraper">
-                        <div class="title-content-principal-left">
-                            <b>Estrutura</b>
-                            <div class="sublime-text"></div><!--sublime-text-->
-                            <p>Em duas amplas unidades, localizadas em Piracicaba/SP, a Bom Peixe soma mais de 100 mil m² 
-                                compostos por modernas instalações, processos automatizados e tecnologia de ponta..</p>
-                        </div><!--title-content-principal-->
-                    </div><!--flex-wraper-->
-                </div><!--flex-container-->
-            </div><!--content-principal-->
-
-        </div><!--content-principal-->
+        <div class="container">
+            <div class="mosaic-container">
+                
+                <div class="mosaic-item text-item">
+                    <h2>Estrutura</h2>
+                    <div class="sublime-text"></div><!--sublime-text-->
+                    <p>Em duas amplas unidades, localizadas em Piracicaba/SP, a Bom Peixe soma mais de 100 mil m² 
+                       compostos por modernas instalações, processos automatizados e tecnologia de ponta..</p>
+                </div>
+            
+                <div class="mosaic-item image-item">
+                    <iframe width="917" 
+                        height="516" src="https://www.youtube.com/embed/BmEGBjJISJc" 
+                        title="Beneficiamento Frigopesca" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div><!--mosaic-item-->
+            
+                <div class="mosaic-item image-item">
+                    <iframe src="https://www.youtube.com/embed/_zaDraleFFA" 
+                            title="INSTITUCIONAL FRIGORIFICO FRIGOPESCA" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                    </iframe>
+                </div><!--mosaic-item-->
+            
+                <div class="mosaic-item text-item">
+                    <h2>Apresentação</h2>
+                    <div class="sublime-text"></div><!--sublime-text-->
+                    <p>A Bom Peixe leva para todo o Brasil o que há de melhor em peixes e frutos do mar. 
+                       Para preservar o sabor, garantir a qualidade e satisfazer os mais exigentes paladares, 
+                       utiliza processos automatizados e rígidos padrões até o produto chegar às mãos do 
+                       consumidor.</p>
+                </div>
+            </div><!--mosaic-container-->
         
-        <div class="history-content">
-            <div class="container">
-                <h1>História</h1>
-                <div class="sublime-text"></div><!--sublime-text-->
-            </div><!--container-->
-        </div><!--history-content-->
-        <div class="image-history-content">
-            <img class="image-top" src="https://img.pikbest.com/wp/202344/texture-block-background-and-of-a-concrete-wall_9922586.jpg!w700wp" alt="image-history-content">
-            <img class="image-bottom" src="https://bompeixe.com.br/wp-content/uploads/elementor/thumbs/6941_apas_2023_timeline-oficial-qfi894ton3h2cvryqtf5kmvodds0e3m99va1kj6baw.png" alt="">
-            <div class="clear"></div>
-        </div><!--image-history-content-->
-
+                <div class="product-content">
+                    <div class="product-01">
+                        <img src="https://www.grupoaguasclaras.com.br/wp-content/uploads/61a6b150992e8.jpg" alt="">
+                    </div>
+                    <div class="product-01">
+                        <img src="https://opresenterural.com.br/wp-content/uploads/2022/01/tilapia.jpg" alt="">
+                    </div>
+                    <div class="product-01">
+                        <img src="https://media.gazetadopovo.com.br/2019/01/e8c17fdda43e1e2c0149f1efd8f1e439-gpMedium.jpg" alt="">
+                    </div>
+                    <div class="product-01">
+                        <img src="https://www.portaldoagronegocio.com.br/storage/images/notices/5fbd0e2889202.jpg" alt="">
+                    </div>
+                    <div class="product-01">
+                        <img src="https://onovooeste.com.br/extranet/thumbnail/resize/960/gallery/18951.jpg" alt="">
+                    </div>
+                    <div class="product-01">
+                        <img src="https://cdn6.campograndenews.com.br/uploads/noticias/2020/03/10/3foeax0iszcw0.jpg" alt="">
+                    </div>
+                    
+                </div><!--image-history-content-->
+           
         <div class="mosaic-container">
             <div class="mosaic-item text-item">
                 <h2>Sustentabilidade</h2>
@@ -171,7 +175,7 @@
                     <a href="#politica" class="button-app">SAIBA MAIS</a>
                 </div>
         </div><!--mosaic-container-->  
-
+        </div>
         <div class="enfase">
             <div class="container">
                 <div class="enfase-margin">
@@ -197,7 +201,7 @@
                 </div><!--enfase-margin-->
             </div><!--container-->
         </div><!--enfase-footer-->
-        <div class="parent-container">
+        <div class="container">
             <p>&copy; 2025 Frigo Pesca. Todos os direitos reservados | Desenvolvido por Turing Tecnologia da Informação.</p>
         </div><!--container-->
     </footer><!--footer-->
