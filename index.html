@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,22 +11,24 @@
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!--FONTS-->
 
     <!--ICONS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <!--ICONS-->
 </head>
+
 <body>
     <header class="header">
-        <div class="header-logo">
+        <div class="https://frigopesca.com/img/logo.png">
             <img src="logo.png" alt="Logo" style="height: 40px;">
         </div>
         <nav class="header-menu">
-            <a href="#apresentacao">Apresentação</a>
-            <a href="#estrutura">Estrutura</a>
-            <a href="#politica">Nossas políticas</a>
+            <a onclick="home()">Home</a>
+            <a onclick="products()">Produtos</a>
+            <a onclick="contact()">Contato</a>
         </nav>
 
         <div class="mobile-menu-icon" onclick="toggleMenu()">
@@ -37,9 +37,9 @@
     </header>
 
     <div class="mobile-menu" id="mobileMenu">
-        <a href="#apresentacao">Apresentação</a>
-        <a href="#estrutura">Estrutura</a>
-        <a href="#politica">Nossas políticas</a>
+        <a onclick="home()">Home</a>
+        <a onclick="products()">Produtos</a>
+        <a onclick="contact()">Contato</a>
     </div>
 
     <main>
@@ -48,7 +48,7 @@
             <video class="video-banner" autoplay loop muted playsinline>
                 <source src="https://bompeixe.com.br/wp-content/uploads/2023/01/banner-site.mp4" type="video/mp4">
                 Seu navegador não suporta o elemento de vídeo.
-            </video>            
+            </video>
         </div><!--banner-principal-->
 
         <div class="parent-container flex-index">
@@ -79,109 +79,109 @@
 
         <div class="container">
             <div class="mosaic-container">
-                
+
                 <div id="estrutura" class="mosaic-item text-item">
                     <h2>Estrutura</h2>
                     <div class="sublime-text"></div><!--sublime-text-->
-                    <p>Em duas amplas unidades, localizadas em Piracicaba/SP, a Bom Peixe soma mais de 100 mil m² 
-                       compostos por modernas instalações, processos automatizados e tecnologia de ponta..</p>
+                    <p>Em duas amplas unidades, localizadas em Piracicaba/SP, a Bom Peixe soma mais de 100 mil m²
+                        compostos por modernas instalações, processos automatizados e tecnologia de ponta..</p>
                 </div>
-            
+
                 <div class="mosaic-item image-item">
-                    <iframe width="917" 
-                        height="516" src="https://www.youtube.com/embed/BmEGBjJISJc" 
-                        title="Beneficiamento Frigopesca" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen>
+                    <iframe width="917" height="516" src="https://www.youtube.com/embed/BmEGBjJISJc"
+                        title="Beneficiamento Frigopesca" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                     </iframe>
                 </div><!--mosaic-item-->
-            
+
                 <div class="mosaic-item image-item">
-                    <iframe src="https://www.youtube.com/embed/_zaDraleFFA" 
-                            title="INSTITUCIONAL FRIGORIFICO FRIGOPESCA" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" 
-                            allowfullscreen>
+                    <iframe src="https://www.youtube.com/embed/_zaDraleFFA" title="INSTITUCIONAL FRIGORIFICO FRIGOPESCA"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                     </iframe>
                 </div><!--mosaic-item-->
-            
+
                 <div id="apresentacao" class="mosaic-item text-item">
                     <h2>Apresentação</h2>
                     <div class="sublime-text"></div><!--sublime-text-->
-                    <p>A Bom Peixe leva para todo o Brasil o que há de melhor em peixes e frutos do mar. 
-                       Para preservar o sabor, garantir a qualidade e satisfazer os mais exigentes paladares, 
-                       utiliza processos automatizados e rígidos padrões até o produto chegar às mãos do 
-                       consumidor.</p>
+                    <p>A Bom Peixe leva para todo o Brasil o que há de melhor em peixes e frutos do mar.
+                        Para preservar o sabor, garantir a qualidade e satisfazer os mais exigentes paladares,
+                        utiliza processos automatizados e rígidos padrões até o produto chegar às mãos do
+                        consumidor.</p>
                 </div>
             </div><!--mosaic-container-->
-        
-                <div class="product-content">
-                    <div class="product-01">
-                        <img src="https://www.grupoaguasclaras.com.br/wp-content/uploads/61a6b150992e8.jpg" alt="">
-                    </div>
-                    <div class="product-01">
-                        <img src="https://opresenterural.com.br/wp-content/uploads/2022/01/tilapia.jpg" alt="">
-                    </div>
-                    <div class="product-01">
-                        <img src="https://media.gazetadopovo.com.br/2019/01/e8c17fdda43e1e2c0149f1efd8f1e439-gpMedium.jpg" alt="">
-                    </div>
-                    <div class="product-01">
-                        <img src="https://www.portaldoagronegocio.com.br/storage/images/notices/5fbd0e2889202.jpg" alt="">
-                    </div>
-                    <div class="product-01">
-                        <img src="https://onovooeste.com.br/extranet/thumbnail/resize/960/gallery/18951.jpg" alt="">
-                    </div>
-                    <div class="product-01">
-                        <img src="https://cdn6.campograndenews.com.br/uploads/noticias/2020/03/10/3foeax0iszcw0.jpg" alt="">
-                    </div>
-                    
-                </div><!--image-history-content-->
-           
-        <div class="mosaic-container">
-            <div class="mosaic-item text-item">
-                <h2>Sustentabilidade</h2>
-                <div class="sublime-text"></div><!--sublime-text-->
-                <p>Esta é a premissa do grupo Bom Peixe, que acredita na responsabilidade das 
-                    empresas para com a comunidade e o planeta, por isso investe em um programa 
-                    interno que visa à preservação do meio ambiente e à conscientização dos colaboradores. 
-                    Conheça alguns projetos abaixo:</p>
-                <b><i class="fa-solid fa-check"></i> Lacres que renovam vidas</b>
-                <b><i class="fa-solid fa-check"></i> Reciclagem de materiais</b>
-                <b><i class="fa-solid fa-check"></i> Tratamento e reaproveitamento da água</b>
-                <a href="#saber-mais" class="button-app">SAIBA MAIS</a>
-            </div>
-        
-            <div class="mosaic-item image-item">
-                <img src="https://meiosustentavel.com.br/wp-content/uploads/2019/07/1814-1024x683.jpg" alt="Imagem 1">
-            </div>
-        
-            <div class="mosaic-item image-item">
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/016/728/651/small_2x/modern-technologies-group-of-business-people-that-working-on-the-project-in-the-office-free-photo.jpg" alt="Imagem 2">
-            </div>
-        
-            <div class="mosaic-item text-item">
-                <h2 id="politica">Política de Governança Ética e Conduta</h2>
-                <div class="sublime-text"></div><!--sublime-text-->
-                <p>Nossa política de governança garante nosso compromisso com a melhoria contínua 
-                    das atividades, as padronizações dos processos, a gestão de indicadores e o 
-                    planejamento de novos projetos.
-                    Nossa conduta e decisões são pautadas pelos valores éticos legais e organizacionais, 
-                    orientando a maneira que devemos conduzir nossas ações e relações no ambiente empresarial.
-                    Estamos comprometidos e focados em atender nossos clientes e parceiros com atitudes que edifiquem e sustentem a qualidade, confiança e a credibilidade de nossos negócios.</p>
-                    
+
+            <div class="product-content">
+                <div class="product-01">
+                    <img src="https://www.grupoaguasclaras.com.br/wp-content/uploads/61a6b150992e8.jpg" alt="">
+                </div>
+                <div class="product-01">
+                    <img src="https://opresenterural.com.br/wp-content/uploads/2022/01/tilapia.jpg" alt="">
+                </div>
+                <div class="product-01">
+                    <img src="https://media.gazetadopovo.com.br/2019/01/e8c17fdda43e1e2c0149f1efd8f1e439-gpMedium.jpg"
+                        alt="">
+                </div>
+                <div class="product-01">
+                    <img src="https://www.portaldoagronegocio.com.br/storage/images/notices/5fbd0e2889202.jpg" alt="">
+                </div>
+                <div class="product-01">
+                    <img src="https://onovooeste.com.br/extranet/thumbnail/resize/960/gallery/18951.jpg" alt="">
+                </div>
+                <div class="product-01">
+                    <img src="https://cdn6.campograndenews.com.br/uploads/noticias/2020/03/10/3foeax0iszcw0.jpg" alt="">
+                </div>
+
+            </div><!--image-history-content-->
+
+            <div class="mosaic-container">
+                <div class="mosaic-item text-item">
+                    <h2>Sustentabilidade</h2>
+                    <div class="sublime-text"></div><!--sublime-text-->
+                    <p>Esta é a premissa do grupo Bom Peixe, que acredita na responsabilidade das
+                        empresas para com a comunidade e o planeta, por isso investe em um programa
+                        interno que visa à preservação do meio ambiente e à conscientização dos colaboradores.
+                        Conheça alguns projetos abaixo:</p>
+                    <b><i class="fa-solid fa-check"></i> Lacres que renovam vidas</b>
+                    <b><i class="fa-solid fa-check"></i> Reciclagem de materiais</b>
+                    <b><i class="fa-solid fa-check"></i> Tratamento e reaproveitamento da água</b>
+                    <a href="#saber-mais" class="button-app">SAIBA MAIS</a>
+                </div>
+
+                <div class="mosaic-item image-item">
+                    <img src="https://meiosustentavel.com.br/wp-content/uploads/2019/07/1814-1024x683.jpg"
+                        alt="Imagem 1">
+                </div>
+
+                <div class="mosaic-item image-item">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/016/728/651/small_2x/modern-technologies-group-of-business-people-that-working-on-the-project-in-the-office-free-photo.jpg"
+                        alt="Imagem 2">
+                </div>
+
+                <div class="mosaic-item text-item">
+                    <h2 id="politica">Política de Governança Ética e Conduta</h2>
+                    <div class="sublime-text"></div><!--sublime-text-->
+                    <p>Nossa política de governança garante nosso compromisso com a melhoria contínua
+                        das atividades, as padronizações dos processos, a gestão de indicadores e o
+                        planejamento de novos projetos.
+                        Nossa conduta e decisões são pautadas pelos valores éticos legais e organizacionais,
+                        orientando a maneira que devemos conduzir nossas ações e relações no ambiente empresarial.
+                        Estamos comprometidos e focados em atender nossos clientes e parceiros com atitudes que
+                        edifiquem e sustentem a qualidade, confiança e a credibilidade de nossos negócios.</p>
+
                     <a href="#politica" class="button-app">SAIBA MAIS</a>
                 </div>
-        </div><!--mosaic-container-->  
+            </div><!--mosaic-container-->
         </div>
         <div class="enfase">
             <div class="container">
                 <div class="enfase-margin">
                     <h2>Siga-nos no Instagram</h2>
                     <a class="button-app"
-                        href="https://www.instagram.com/accounts/login/?next=%2Ffrigopescaoficial%2F&source=omni_redirect"><i class="fa-brands fa-instagram"></i> FRIGOPESCA</a>
+                        href="https://www.instagram.com/accounts/login/?next=%2Ffrigopescaoficial%2F&source=omni_redirect"><i
+                            class="fa-brands fa-instagram"></i> FRIGOPESCA</a>
                 </div><!--enfase-margin-->
             </div><!--container-->
         </div><!--enfase-->
@@ -193,19 +193,19 @@
                 <div class="enfase-margin">
                     <h2>LOGO</h2>
                     <a class="social-media-button"
-                        href="https://www.instagram.com/accounts/login/?next=%2Ffrigopescaoficial%2F&source=omni_redirect"><i class="fa-brands fa-instagram"></i></a>
+                        href="https://www.instagram.com/accounts/login/?next=%2Ffrigopescaoficial%2F&source=omni_redirect"><i
+                            class="fa-brands fa-instagram"></i></a>
 
-                    <a class="social-media-button"
-                        href="https://www.facebook.com/Frigopesca/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="social-media-button" href="https://www.facebook.com/Frigopesca/"><i
+                            class="fa-brands fa-facebook-f"></i></a>
 
                 </div><!--enfase-margin-->
             </div><!--container-->
         </div><!--enfase-footer-->
         <div class="container">
-            <p>&copy; 2025 Frigo Pesca. Todos os direitos reservados | Desenvolvido por Turing Tecnologia da Informação.</p>
+            <p>&copy; 2025 Frigo Pesca. Todos os direitos reservados | Desenvolvido por Turing Tecnologia da Informação.
+            </p>
         </div><!--container-->
     </footer><!--footer-->
 
-    <script src="js/script.js"></script>
-</body>
-</html>
+    <script src="js/rooter.js"></script>
