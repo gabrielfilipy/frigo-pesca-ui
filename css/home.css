@@ -147,18 +147,15 @@
     text-align: center;
 }
 
+/* Mobile - Menu mobile e flexbox para itens */
+@media (max-width: 800px) {
 
+    .banner-principal h1 {
+        font-size: 20px;
+    }
 
-
-  
-
-
-
-
-
-
-
-
+}
+/* Mobile - Menu mobile e flexbox para itens */
 
 
 

@@ -29,13 +29,13 @@
         <div class="container">
             <div class="flex-container">
 
-                <div class="flex-item">
+                <div class="flex-item-header">
                     <a class="link" onclick="home()">
                         <img src="https://frigopesca.com/img/logo.png" alt="Logo" style="height: 40px;">
                     </a>
                 </div><!--flex-item-->
 
-                <div class="flex-item">
+                <div class="flex-item-header">
                     <nav class="menu-desktop">
                         <a onclick="home()">Home</a>
                         <a onclick="products()">Produtos</a>
@@ -59,7 +59,8 @@
 
     <main>
         <div class="container">
-            <div class="flex-container">
+            <h2 class="title"><span class="bordered">Con</span>tatos</h2>
+            <div class="flex-container flex-container-grap">
                 <div class="flex-item">
                     <div class="form-container">
                         <h2>INFORME SEU E-MAIL</h2>
@@ -68,7 +69,18 @@
                             <input type="email" id="email" name="email" placeholder="E-mail">
                             <input type="email" id="email" name="email" placeholder="Seu nome">
                             <textarea id="email" placeholder="Mensagem"></textarea>
-                            <button type="submit">Enviar</button>
+                            
+                            <div class="flex-container ">
+                                <div class="flex-item ">
+                                    <button type="submit">Enviar</button>
+                                </div><!--flex-item-->
+
+                                <div class="flex-item flex-item-padding right">
+                                    <a href="https://www.instagram.com/frigopescaoficial/#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                </div><!--flex-item-->
+                            </div><!--flex-container-->
+
                         </form>
                     </div><!--form-container-->
                 </div><!--flex-item-->
