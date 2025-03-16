@@ -2,11 +2,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descrição breve da página">
-    <meta name="author" content="Seu Nome">
+    <meta name="author" content="Turin Tecnologia da Informacao">
     <meta name="keywords" content="palavras-chave, separadas, por, vírgulas">
     <title>Frigo Pesca</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://frigopesca.com/img/logo.png" type="image/x-icon">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/product.css">
+    <!--CSS-->
 
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,20 +26,30 @@
 
 <body>
     <header class="header">
-        <div class="header-logo">
-            <img src="https://frigopesca.com/img/logo.png" alt="Logo" style="height: 40px;">
-        </div>
-        <nav class="header-menu">
-            <a onclick="home()">Home</a>
-            <a onclick="products()">Produtos</a>
-            <a onclick="contact()">Contato</a>
-        </nav>
+        <div class="container">
+            <div class="flex-container">
 
-        <div class="mobile-menu-icon" onclick="toggleMenu()">
-            &#9776;
-        </div>
+                <div class="flex-item">
+                    <a class="link" onclick="home()">
+                        <img src="https://frigopesca.com/img/logo.png" alt="Logo" style="height: 40px;">
+                    </a>
+                </div><!--flex-item-->
+
+                <div class="flex-item">
+                    <nav class="menu-desktop">
+                        <a onclick="home()">Home</a>
+                        <a onclick="products()">Produtos</a>
+                        <a onclick="contact()">Contato</a>
+                    </nav>
+
+                    <div class="mobile-menu-icon" onclick="toggleMenu()">
+                        &#9776;
+                    </div>
+                </div><!--flex-item-->
+
+            </div><!--flex-container-->
+        </div><!--container-->
     </header>
-
     <div class="mobile-menu" id="mobileMenu">
         <a onclick="home()">Home</a>
         <a onclick="products()">Produtos</a>
@@ -43,67 +57,61 @@
     </div>
 
     <main>
-
-        <div class="flex-products">
-            <div class="flex-products-item">
-                <img src="https://frigopesca.com/produtos/pirarucu.png" alt="Produto 1">
-                <h3>Peixe congelado filé em pedaços sem pele PIRARUCU (Medalhão)</h3>
-                <p>Descrição curta do Peixe Congelado.</p>
-                <button>Conheça</button>
-            </div>
-            <div class="flex-products-item">
-                <img src="https://frigopesca.com/produtos/posta-de-piramutaba-sem-pele.png" alt="Produto 1">
-                <h3>Peixe congelado posta de PIRAMUTABA sem pele</h3>
-                <p>Descrição curta do Peixe Congelado.</p>
-                <button>Conheça</button>
-            </div>
-            <div class="flex-products-item">
-                <img src="https://frigopesca.com/produtos/PIRAMUTABA%20COM%20PEL.png" alt="Produto 1">
-                <h3>Peixe Congelado posta de PIRAMUTABA com pele</h3>
-                <p>Descrição curta do Peixe Congelado.</p>
-                <button>Conheça</button>
-            </div>
-
-            <div class="flex-products-item">
-                <img src="https://frigopesca.com/produtos/posta-de-piramutaba-sem-pele.png" alt="Produto 1">
-                <h3>Peixe congelado filé em pedaços sem pele PIRARUCU (Medalhão)</h3>
-                <p>Descrição curta do Peixe Congelado.</p>
-                <button>Conheça</button>
-            </div>
-            <div class="flex-products-item">
-                <img src="https://frigopesca.com/produtos/pirarucu.png" alt="Produto 1">
-                <h3>Peixe congelado filé em pedaços sem pele PIRARUCU (Medalhão)</h3>
-                <p>Descrição curta do Peixe Congelado.</p>
-                <button>Conheça</button>
-            </div>
-            <div class="flex-products-item">
-                <img src="https://frigopesca.com/produtos/pirarucu.png" alt="Produto 1">
-                <h3>Peixe congelado filé em pedaços sem pele PIRARUCU (Medalhão)</h3>
-                <p>Descrição curta do Peixe Congelado.</p>
-                <button>Conheça</button>
-            </div>
-        </div>
-
-    </main>
-    <footer>
-        <div class="enfase-footer">
-            <div class="container">
-                <div class="enfase-margin">
-                    <h2>LOGO</h2>
-                    <a class="social-media-button"
-                        href="https://www.instagram.com/accounts/login/?next=%2Ffrigopescaoficial%2F&source=omni_redirect"><i
-                            class="fa-brands fa-instagram"></i></a>
-
-                    <a class="social-media-button" href="https://www.facebook.com/Frigopesca/"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-
-                </div><!--enfase-margin-->
-            </div><!--container-->
-        </div><!--enfase-footer-->
         <div class="container">
-            <p>&copy; 2025 Frigo Pesca. Todos os direitos reservados | Desenvolvido por Turing Tecnologia da Informação.
-            </p>
+            <div class="flex-container flex-container-grap center">
+                <div class="flex-item">
+                    <div class="banner">
+                        <img src="https://frigopesca.com/produtos/pirarucu.png" alt="Produto 1">
+                        <h3>Peixe congelado filé em pedaços sem pele PIRARUCU (Medalhão)</h3>
+                        <p>Descrição curta do Peixe Congelado.</p>
+                        <button>Conheça</button>
+                    </div><!--banner-product-->
+                </div>
+                <div class="flex-item">
+                    <div class="banner">
+                        <img src="https://frigopesca.com/produtos/posta-de-piramutaba-sem-pele.png" alt="Produto 1">
+                        <h3>Peixe congelado posta de PIRAMUTABA sem pele</h3>
+                        <p>Descrição curta do Peixe Congelado.</p>
+                        <button>Conheça</button>
+                    </div><!--banner-product-->
+                </div>
+                <div class="flex-item">
+                    <div class="banner">
+                        <img src="https://frigopesca.com/produtos/PIRAMUTABA%20COM%20PEL.png" alt="Produto 1">
+                        <h3>Peixe Congelado posta de PIRAMUTABA com pele</h3>
+                        <p>Descrição curta do Peixe Congelado.</p>
+                        <button>Conheça</button>
+                    </div><!--banner-product-->
+                </div>
+
+                <div class="flex-item">
+                    <div class="banner">
+                        <img src="https://frigopesca.com/produtos/posta-de-piramutaba-sem-pele.png" alt="Produto 1">
+                        <h3>Peixe congelado filé em pedaços sem pele PIRARUCU (Medalhão)</h3>
+                        <p>Descrição curta do Peixe Congelado.</p>
+                        <button>Conheça</button>
+                    </div><!--banner-product-->
+                </div>
+                <div class="flex-item">
+                    <div class="banner">
+                        <img src="https://frigopesca.com/produtos/pirarucu.png" alt="Produto 1">
+                        <h3>Peixe congelado filé em pedaços sem pele PIRARUCU (Medalhão)</h3>
+                        <p>Descrição curta do Peixe Congelado.</p>
+                        <button>Conheça</button>
+                    </div><!--banner-product-->
+                </div>
+                <div class="flex-item">
+                    <div class="banner">
+                        <img src="https://frigopesca.com/produtos/pirarucu.png" alt="Produto 1">
+                        <h3>Peixe congelado filé em pedaços sem pele PIRARUCU (Medalhão)</h3>
+                        <p>Descrição curta do Peixe Congelado.</p>
+                        <button>Conheça</button>
+                    </div><!--banner-product-->
+                </div>
+            </div>
         </div><!--container-->
-    </footer><!--footer-->
+    </main>
+
 
     <script src="js/rooter.js"></script>
+    <script src="js/script.js"></script>

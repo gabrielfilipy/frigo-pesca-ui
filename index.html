@@ -2,18 +2,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descrição breve da página">
-    <meta name="author" content="Seu Nome">
+    <meta name="author" content="Minimals Tecnologia da Informacao">
     <meta name="keywords" content="palavras-chave, separadas, por, vírgulas">
     <title>Frigo Pesca</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://frigopesca.com/img/logo.png" type="image/x-icon">
 
-    <!--FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <!--FONTS-->
+    <!--CSS-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/home.css">
+    <!--CSS-->
 
     <!--ICONS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -22,18 +19,29 @@
 
 <body>
     <header class="header">
-        <div class="https://frigopesca.com/img/logo.png">
-            <img src="logo.png" alt="Logo" style="height: 40px;">
-        </div>
-        <nav class="header-menu">
-            <a onclick="home()">Home</a>
-            <a onclick="products()">Produtos</a>
-            <a onclick="contact()">Contato</a>
-        </nav>
+        <div class="container">
+            <div class="flex-container">
 
-        <div class="mobile-menu-icon" onclick="toggleMenu()">
-            &#9776;
-        </div>
+                <div class="flex-item">
+                    <a class="link" onclick="home()">
+                        <img src="https://frigopesca.com/img/logo.png" alt="Logo" style="height: 40px;">
+                    </a>
+                </div><!--flex-item-->
+
+                <div class="flex-item">
+                    <nav class="menu-desktop">
+                        <a onclick="home()">Home</a>
+                        <a onclick="products()">Produtos</a>
+                        <a onclick="contact()">Contato</a>
+                    </nav>
+
+                    <div class="mobile-menu-icon" onclick="toggleMenu()">
+                        &#9776;
+                    </div>
+                </div><!--flex-item-->
+
+            </div><!--flex-container-->
+        </div><!--container-->
     </header>
 
     <div class="mobile-menu" id="mobileMenu">
@@ -48,164 +56,219 @@
             <video class="video-banner" autoplay loop muted playsinline>
                 <source src="https://bompeixe.com.br/wp-content/uploads/2023/01/banner-site.mp4" type="video/mp4">
                 Seu navegador não suporta o elemento de vídeo.
-            </video>
+            </video><!--video-banner-->
         </div><!--banner-principal-->
 
-        <div class="parent-container flex-index">
-            <div class="flex-wraper">
-                <div class="mini-banner-principal flex-center flex-direction-colum">
-                    <img src="https://bompeixe.com.br/wp-content/uploads/2023/01/Asset-4@4x.png" alt="">
-                    <p>Produtos</p>
-                    <a href="#conhecer" class="button-app">CONHEÇA</a>
-                </div><!--mini-banner-principal-->
-            </div>
-            <div class="flex-wraper">
-                <div class="mini-banner-principal flex-center flex-direction-colum">
-                    <img src="https://bompeixe.com.br/wp-content/uploads/2023/01/Asset-4@4x.png" alt="">
-                    <p>Receitas</p>
-                    <a href="#conhecer" class="button-app">CONHEÇA</a>
-                </div><!--mini-banner-principal-->
-            </div>
-            <div class="flex-wraper">
-                <div class="mini-banner-principal flex-center flex-direction-colum">
-                    <img src="https://bompeixe.com.br/wp-content/uploads/2023/01/Asset-3@4x.png" alt="">
-                    <p>Contato</p>
-                    <a href="#conhecer" class="button-app">CONHEÇA</a>
-                </div><!--mini-banner-principal-->
-            </div>
-        </div><!--flex-container-->
-
-        <div class="end-flex"></div><!--end-flex-->
-
         <div class="container">
-            <div class="mosaic-container">
+            <div class="flex-container flex-container-grap center">
+                <div class="flex-item-4">
+                    <div class="banner banner-dicas">
+                        <img src="https://bompeixe.com.br/wp-content/uploads/2023/01/Asset-4@4x.png" alt="">
+                        <h3>Produtos</h3>
+                        <p class="text-italic">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur</p>
+                        <a href="#conhecer">CONHEÇA</a>
+                    </div><!--banner-->
+                </div><!--flex-item-->
 
-                <div id="estrutura" class="mosaic-item text-item">
-                    <h2>Estrutura</h2>
-                    <div class="sublime-text"></div><!--sublime-text-->
-                    <p>Em duas amplas unidades, localizadas em Piracicaba/SP, a Bom Peixe soma mais de 100 mil m²
-                        compostos por modernas instalações, processos automatizados e tecnologia de ponta..</p>
-                </div>
+                <div class="flex-item-4">
+                    <div class="banner banner-dicas">
+                        <img src="https://bompeixe.com.br/wp-content/uploads/2023/01/Asset-4@4x.png" alt="">
+                        <h3>Produtos</h3>
+                        <p class="text-italic">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur</p>
+                        <a href="#conhecer">CONHEÇA</a>
+                    </div><!--banner-->
+                </div><!--flex-item-->
 
-                <div class="mosaic-item image-item">
-                    <iframe width="917" height="516" src="https://www.youtube.com/embed/BmEGBjJISJc"
-                        title="Beneficiamento Frigopesca" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
+                <div class="flex-item-4">
+                    <div class="banner banner-dicas link">
+                        <img src="https://bompeixe.com.br/wp-content/uploads/2023/01/Asset-3@4x.png" alt="">
+                        <h3>Produtos</h3>
+                        <p class="text-italic">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur</p>
+                        <a href="#conhecer">CONHEÇA</a>
+                    </div><!--banner-->
+                </div><!--flex-item-->
+
+                <div class="flex-item-4">
+                    <div class="banner banner-dicas link">
+                        <img src="https://bompeixe.com.br/wp-content/uploads/2023/01/Asset-3@4x.png" alt="">
+                        <h3>Produtos</h3>
+                        <p class="text-italic">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur</p>
+                        <a href="#conhecer">CONHEÇA</a>
+                    </div><!--banner-->
+                </div><!--flex-item-->
+            </div><!--flex-container-->
+
+            <div class="mosaic">
+                <div class="mosaic-item">
+                    <div class="flex-container">
+                        <div class="flex-item texto">
+                            <h2><span class="bordered">Est</span>rutura</h2>
+                            <p>Em duas amplas unidades, localizadas em Piracicaba/SP, a Bom Peixe soma mais de 100
+                                mil m² compostos por modernas instalações, processos automatizados e tecnologia de
+                                ponta.</p>
+                        </div><!--flex-item-->
+                        <div class="flex-item imagem">
+                            <img src="https://opresenterural.com.br/wp-content/uploads/2022/01/tilapia.jpg" alt="">
+                        </div><!--flex-item-->
+                    </div><!--flex-container-->
                 </div><!--mosaic-item-->
 
-                <div class="mosaic-item image-item">
-                    <iframe src="https://www.youtube.com/embed/_zaDraleFFA" title="INSTITUCIONAL FRIGORIFICO FRIGOPESCA"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
+                <div class="mosaic-item">
+                    <div class="flex-container">
+                        <div class="flex-item imagem">
+                            <img src="https://cdn6.campograndenews.com.br/uploads/noticias/2020/03/10/3foeax0iszcw0.jpg"
+                                alt="">
+                        </div><!--flex-item-->
+                        <div class="flex-item texto">
+                            <h2><span class="bordered">Com</span>promisso com a Higiene e Qualidade</h2>
+                            <p>Na Frigopesca, a segurança alimentar e o bem-estar de nossos clientes são prioridades
+                                absolutas. Estamos comprometidos com as melhores práticas de higiene e com a
+                                implementação de rigorosos protocolos de segurança durante todas as etapas de nossos
+                                processos.
+
+                                Desde a recepção das matérias-primas até a distribuição de nossos produtos, garantimos
+                                que todos os nossos ambientes e equipamentos estejam constantemente higienizados e em
+                                conformidade com as normas de saúde e segurança. Trabalhamos com equipes treinadas e
+                                dedicadas, que seguem procedimentos detalhados para garantir a qualidade e a integridade
+                                de nossos produtos.</p>
+                        </div><!--flex-item-->
+                    </div><!--flex-container-->
                 </div><!--mosaic-item-->
 
-                <div id="apresentacao" class="mosaic-item text-item">
-                    <h2>Apresentação</h2>
-                    <div class="sublime-text"></div><!--sublime-text-->
-                    <p>A Bom Peixe leva para todo o Brasil o que há de melhor em peixes e frutos do mar.
-                        Para preservar o sabor, garantir a qualidade e satisfazer os mais exigentes paladares,
-                        utiliza processos automatizados e rígidos padrões até o produto chegar às mãos do
-                        consumidor.</p>
-                </div>
-            </div><!--mosaic-container-->
 
-            <div class="product-content">
-                <div class="product-01">
-                    <img src="https://www.grupoaguasclaras.com.br/wp-content/uploads/61a6b150992e8.jpg" alt="">
-                </div>
-                <div class="product-01">
-                    <img src="https://opresenterural.com.br/wp-content/uploads/2022/01/tilapia.jpg" alt="">
-                </div>
-                <div class="product-01">
-                    <img src="https://media.gazetadopovo.com.br/2019/01/e8c17fdda43e1e2c0149f1efd8f1e439-gpMedium.jpg"
-                        alt="">
-                </div>
-                <div class="product-01">
-                    <img src="https://www.portaldoagronegocio.com.br/storage/images/notices/5fbd0e2889202.jpg" alt="">
-                </div>
-                <div class="product-01">
-                    <img src="https://onovooeste.com.br/extranet/thumbnail/resize/960/gallery/18951.jpg" alt="">
-                </div>
-                <div class="product-01">
-                    <img src="https://cdn6.campograndenews.com.br/uploads/noticias/2020/03/10/3foeax0iszcw0.jpg" alt="">
-                </div>
+                <div class="mosaic-item">
+                    <div class="flex-container">
+                        <div class="flex-item texto">
+                            <h2><span class="bordered">Tec</span>nologia de Ponta no Processamento de Peixes</h2>
+                            <p>Na Frigopesca, buscamos sempre inovar e aprimorar nossos processos para oferecer produtos
+                                de altíssima qualidade. Investimos em máquinas modernas e tecnologias avançadas que
+                                garantem a eficiência e a segurança no processamento dos nossos peixes.
 
-            </div><!--image-history-content-->
+                                Nossas máquinas de última geração são projetadas para otimizar cada etapa da produção,
+                                desde o abate até a embalagem, garantindo precisão, higiene e agilidade. Equipadas com
+                                sistemas automáticos de controle de qualidade, as máquinas asseguram que cada produto
+                                atenda aos mais altos padrões de segurança alimentar e frescor.</p>
+                        </div><!--flex-item-->
+                        <div class="flex-item imagem">
+                            <img src="https://onovooeste.com.br/extranet/thumbnail/resize/960/gallery/18951.jpg" alt="">
+                        </div><!--flex-item-->
+                    </div><!--flex-container-->
+                </div><!--mosaic-item-->
 
-            <div class="mosaic-container">
-                <div class="mosaic-item text-item">
-                    <h2>Sustentabilidade</h2>
-                    <div class="sublime-text"></div><!--sublime-text-->
-                    <p>Esta é a premissa do grupo Bom Peixe, que acredita na responsabilidade das
-                        empresas para com a comunidade e o planeta, por isso investe em um programa
-                        interno que visa à preservação do meio ambiente e à conscientização dos colaboradores.
-                        Conheça alguns projetos abaixo:</p>
-                    <b><i class="fa-solid fa-check"></i> Lacres que renovam vidas</b>
-                    <b><i class="fa-solid fa-check"></i> Reciclagem de materiais</b>
-                    <b><i class="fa-solid fa-check"></i> Tratamento e reaproveitamento da água</b>
-                    <a href="#saber-mais" class="button-app">SAIBA MAIS</a>
-                </div>
+                <div class="mosaic-item">
+                    <div class="flex-container">
+                        <div class="flex-item imagem">
+                            <img src="https://media.gazetadopovo.com.br/2019/01/e8c17fdda43e1e2c0149f1efd8f1e439-gpMedium.jpg"
+                                alt="">
+                        </div><!--flex-item-->
+                        <div class="flex-item texto">
+                            <h2><span class="bordered">Com</span>promisso com a Qualidade do Pescado</h2>
+                            <p>Na Frigopesca, a qualidade do nosso pescado é uma prioridade. Trabalhamos com dedicação
+                                para garantir que nossos produtos atendam aos mais altos padrões de frescor, sabor e
+                                segurança alimentar. Cada etapa do nosso processo é cuidadosamente monitorada, desde a
+                                captura até o processamento e distribuição, para garantir que nossos clientes recebam
+                                sempre o melhor pescado.
 
-                <div class="mosaic-item image-item">
-                    <img src="https://meiosustentavel.com.br/wp-content/uploads/2019/07/1814-1024x683.jpg"
-                        alt="Imagem 1">
-                </div>
+                                Utilizamos práticas sustentáveis e responsáveis em todas as fases da produção,
+                                assegurando que o pescado seja originado de fontes controladas e ambientalmente
+                                conscientes. Nossos fornecedores são selecionados com rigor, e mantemos parcerias com
+                                pescadores e produtores que compartilham nosso compromisso com a qualidade e
+                                sustentabilidade.</p>
+                        </div><!--flex-item-->
+                    </div><!--flex-container-->
+                </div><!--mosaic-item-->
 
-                <div class="mosaic-item image-item">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/016/728/651/small_2x/modern-technologies-group-of-business-people-that-working-on-the-project-in-the-office-free-photo.jpg"
-                        alt="Imagem 2">
-                </div>
+                <div class="mosaic-item">
+                    <div class="flex-container">
+                        <div class="flex-item texto">
+                            <h2><span class="bordered">Nos</span>so Compromisso com a Qualidade</h2>
+                            <p>Na Frigopesca, a qualidade está no coração de tudo o que fazemos. Buscamos constantemente
+                                melhorar nossos processos, produtos e serviços para garantir que nossos clientes recebam
+                                sempre o melhor. Cada passo da nossa cadeia de produção é meticulosamente controlado e
+                                auditado para atender aos mais rigorosos padrões de qualidade, segurança alimentar e
+                                excelência.</p>
+                        </div><!--flex-item-->
+                        <div class="flex-item imagem">
+                            <img src="https://frigopesca.com/img/industria4.jpg" alt="">
+                        </div><!--flex-item-->
+                    </div><!--flex-container-->
+                </div><!--mosaic-item-->
 
-                <div class="mosaic-item text-item">
-                    <h2 id="politica">Política de Governança Ética e Conduta</h2>
-                    <div class="sublime-text"></div><!--sublime-text-->
-                    <p>Nossa política de governança garante nosso compromisso com a melhoria contínua
-                        das atividades, as padronizações dos processos, a gestão de indicadores e o
-                        planejamento de novos projetos.
-                        Nossa conduta e decisões são pautadas pelos valores éticos legais e organizacionais,
-                        orientando a maneira que devemos conduzir nossas ações e relações no ambiente empresarial.
-                        Estamos comprometidos e focados em atender nossos clientes e parceiros com atitudes que
-                        edifiquem e sustentem a qualidade, confiança e a credibilidade de nossos negócios.</p>
+                <div class="mosaic-item">
+                    <div class="flex-container">
+                        <div class="flex-item imagem">
+                            <img src="https://frigopesca.com/img/industria2.jpg" alt="">
+                        </div><!--flex-item-->
+                        <div class="flex-item texto">
+                            <h2><span class="bordered">Nos</span>sa Estrutura</h2>
+                            <p>e A Frigopesca é uma indústria de pescados localizada no coração da Amazônia, reconhecida
+                                pela sua infraestrutura moderna e capacidade de processamento de alta performance. Nosso
+                                compromisso com a qualidade e eficiência se reflete nas instalações de última geração,
+                                projetadas para atender aos mais rigorosos padrões do setor.</p>
+                        </div><!--flex-item-->
+                    </div><!--flex-container-->
+                </div><!--mosaic-item-->
 
-                    <a href="#politica" class="button-app">SAIBA MAIS</a>
-                </div>
-            </div><!--mosaic-container-->
-        </div>
-        <div class="enfase">
-            <div class="container">
-                <div class="enfase-margin">
-                    <h2>Siga-nos no Instagram</h2>
-                    <a class="button-app"
-                        href="https://www.instagram.com/accounts/login/?next=%2Ffrigopescaoficial%2F&source=omni_redirect"><i
-                            class="fa-brands fa-instagram"></i> FRIGOPESCA</a>
-                </div><!--enfase-margin-->
-            </div><!--container-->
-        </div><!--enfase-->
+            </div><!--mosaic-->
 
-    </main>
-    <footer>
-        <div class="enfase-footer">
-            <div class="container">
-                <div class="enfase-margin">
-                    <h2>LOGO</h2>
-                    <a class="social-media-button"
-                        href="https://www.instagram.com/accounts/login/?next=%2Ffrigopescaoficial%2F&source=omni_redirect"><i
-                            class="fa-brands fa-instagram"></i></a>
+            <div class="testimonials">
+                <div class="comentarios">
+                    <img src="img/icon-comentario.png" alt="">
+                    <h2>Depoimentos de nossos clientes</h2>
+                </div><!--comentarios-->
+            <div class="testimonials-content">
+                <div class="flex-container flex-container-grap  center">
+                    <div class="flex-item-2">
+                        <div class="banner-primary">
+                            <img src="https://scontent.fpll6-2.fna.fbcdn.net/v/t1.6435-9/157307065_753804805510491_2153134983916713852_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=7jeS7EchpggQ7kNvgHL61Bl&_nc_oc=Adgi1dnUNMZ79KRN-t1G9SH_iJ8hgvA8DLvueF59_CoXz2EyxXYHB325ASuBqfMFUvqjn18ygjl2kkcPSDJFLDgy&_nc_zt=23&_nc_ht=scontent.fpll6-2.fna&_nc_gid=r5ZX1hUL1mKg4jN59qiRbQ&oh=00_AYGTnn9JTx8UARBtp3H-hcnvZEVWCt9aWwZnBZF2BShnDg&oe=67FE751D"
+                                alt="">
+                            <h2>Haroldo Wilson</h2>
+                            <p>A qualidade do pescado da Frigopesca é incomparável! Sempre fresco e
+                                entregue com pontualidade.</p>
+                        </div><!--banner-primary-->
+                    </div><!--flex-item-->
 
-                    <a class="social-media-button" href="https://www.facebook.com/Frigopesca/"><i
-                            class="fa-brands fa-facebook-f"></i></a>
+                    <div class="flex-item-2">
+                        <div class="banner-primary">
+                            <img src="https://scontent.fpll6-1.fna.fbcdn.net/v/t39.30808-6/345441951_605071314882700_428965713318641469_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=PVB9Lt7Gv4UQ7kNvgEL_5L_&_nc_oc=AdjFxXkIhmBhDuGuX-lUA9rXn5uJ-rSt49df7Z7rFvw9xcz-VM70te2pMBXmkK1izPgFtq2vRoGA39am68pboAr_&_nc_zt=23&_nc_ht=scontent.fpll6-1.fna&_nc_gid=mobCzZ5Dt0bbdkMzrDN71A&oh=00_AYHMGRMS3nGBuhjqBwc9-_ixpx8DiCo2bA2ES8FUJ7U5uQ&oe=67DCB20A"
+                                alt="">
+                            <h2>Marcos Rocha</h2>
+                            <p>Como cliente há anos, posso afirmar que a Frigopesca é a melhor
+                                escolha para quem busca excelência.</p>
+                        </div><!--banner-primary-->
 
-                </div><!--enfase-margin-->
-            </div><!--container-->
-        </div><!--enfase-footer-->
-        <div class="container">
-            <p>&copy; 2025 Frigo Pesca. Todos os direitos reservados | Desenvolvido por Turing Tecnologia da Informação.
-            </p>
+                    </div><!--flex-item-->
+                    <div class="flex-item-2">
+                        <div class="banner-primary">
+                            <img src="https://scontent.fpll6-2.fna.fbcdn.net/v/t1.6435-9/119418393_116171010225335_5086769418929674517_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=IpVlwbaXVqoQ7kNvgHkedpG&_nc_oc=AdhvqkByPd5x3RMHBqmBdwR-clNbxgjO8VwGNsUqwAwybilCuvDFnL1ArLjW4zqeZ8TBWZY2COVjGEyn6ibuzEdw&_nc_zt=23&_nc_ht=scontent.fpll6-2.fna&_nc_gid=8ukrA1qmiimhep3nWqsPFA&oh=00_AYF2cnzxT1Rau3BwfOHE1YzDfOgZjV72nw2NcipGjakiPQ&oe=67FE46EB"
+                                alt="">
+                            <h2>Cileno Monteiro</h2>
+                            <p>A Frigopesca nunca compromete a qualidade. É sempre um prazer
+                                trabalhar
+                                com eles!</p>
+                        </div><!--banner-primary-->
+                    </div><!--flex-item-->
+
+                    <div class="flex-item-2">
+                        <div class="banner-primary">
+                            <img src="https://scontent.fpll6-1.fna.fbcdn.net/v/t39.30808-6/226022344_1970757533079268_8769601410041701731_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=hZsAnvW2JBgQ7kNvgHRuBJQ&_nc_oc=AdhTJDXom2ssVtb9a1Xmp9lG0_r8irua-PXgRaTqD2EeFZW_31RWkoYGcklird8XT4HbHBKW368MWA1XBOgkyB8K&_nc_zt=23&_nc_ht=scontent.fpll6-1.fna&_nc_gid=XS4zGXvpG-MQ3r_xeN5UHg&oh=00_AYHQ7HgNFdeOC29couAmI5u1MI9eGX6sg5oL62ykk9LKdQ&oe=67DCA9B2"
+                                alt="">
+                            <h2>Irauna Andrade</h2>
+                            <p>Além de oferecer produtos frescos, o atendimento da Frigopesca é
+                                impecável. Recomendo a todos!</p>
+                        </div><!--banner-primary-->
+                    </div><!--flex-item-->
+                </div><!--flex-container-->
+            </div><!--testimonials-content-->
+            </div><!--testimonials-->
+
         </div><!--container-->
-    </footer><!--footer-->
+    </main>
 
     <script src="js/rooter.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/animates.js"></script>
