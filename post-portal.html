@@ -1,0 +1,93 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição breve da página">
+    <meta name="author" content="Minimals Tecnologia da Informacao">
+    <meta name="keywords" content="palavras-chave, separadas, por, vírgulas">
+    <title>Frigo Pesca</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/post-portal.css">
+    <!--CSS-->
+
+    <!--ICONS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!--ICONS-->
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="flex-container">
+
+                <div class="flex-item-header">
+                    <a class="link" onclick="home()">
+                        <img src="https://frigopesca.com/img/logo.png" alt="Logo" style="height: 40px;">
+                    </a>
+                </div><!--flex-item-->
+
+                <div class="flex-item-header">
+                    <nav class="menu-desktop">
+                        <a onclick="home()">Home</a>
+                        <a onclick="products()">Produtos</a>
+                        <a onclick="contact()">Contato</a>
+                    </nav>
+
+                    <div class="mobile-menu-icon" onclick="toggleMenu()">
+                        &#9776;
+                    </div>
+                </div><!--flex-item-->
+
+            </div><!--flex-container-->
+        </div><!--container-->
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a onclick="home()">Home</a>
+        <a onclick="products()">Produtos</a>
+        <a onclick="contact()">Contato</a>
+    </div>
+
+    <div class="container">
+        <h2 class="title"><span class="bordered">Det</span>alhe do post</h2>
+
+        <div id="post-portal">
+            <h1 id="post-title"></h1>
+            <p id="post-description"></p>
+
+            <div class="flex-container flex-container-justify-start">
+                <div class="flex-item-foto">
+                    <img id="foto-escritor" src="https://scontent.fpll6-2.fna.fbcdn.net/v/t39.30808-6/480549462_9358247470920910_8687813206301882696_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFDWkMu9peXZRVdne56lSIuxgUHMTYsAjzGBQcxNiwCPAuciU4Cu-GeOqLBAl9NbtLipjUHCO6q_byGGvHQYwFh&_nc_ohc=Eel7iORM0psQ7kNvgFyCEP7&_nc_oc=Adhdnbjbc7dOvSynOYji7CRzjBLCUPCwP5RxuaWQXLrPtP4DkM_QiMP_p35TyxufTfuFEVnlt2FPPcdCAG2ulOzN&_nc_zt=23&_nc_ht=scontent.fpll6-2.fna&_nc_gid=K8L60H8IffAtuHca_4mTsw&oh=00_AYGmOiFISnTjdjbooVb4DnWID3pY0G_peSwG0IkPq8bu3Q&oe=67DE1AC9" alt="Post Image" />
+                </div><!--flex-item-->
+                <div class="flex-item-foto">
+                    <p id="escritor-post">Escrito por <b>Macson Brandão</b> em 17/03/2025</p>
+                </div><!--flex-item-->
+            </div><!--flex-container-->
+
+            <img id="post-image" src="" alt="Post Image" />
+            
+            <div id="post-content"></div>
+        </div>
+    </div><!--container-->
+
+    <script>
+        function getUrlParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+    
+        document.getElementById('post-title').textContent = getUrlParameter('title');
+        document.getElementById('post-image').src = getUrlParameter('image');
+        document.getElementById('post-description').textContent = getUrlParameter('description');
+        document.getElementById('post-content').textContent = getUrlParameter('content');
+    
+        // Preenchendo as informações do autor
+        document.getElementById('foto-escritor').src = getUrlParameter('authorPhoto');
+        document.getElementById('escritor-post').innerHTML = `Escrito por <b>${getUrlParameter('authorName')}</b> em ${getUrlParameter('authorDate')}`;
+    </script>    
+    <script src="js/rooter.js"></script>
+
+</body>
+</html>

@@ -28,8 +28,9 @@ body {
     --color-primary: #007bff;
     --color-primary-light: #eef2fb;
     --color-gray-light: rgb(242, 242, 242);
-    --cor-black-modern: #212121;
+    --cor-black-modern: #4c4c4c;
     --color-font-paragrafo: #555c66;
+    --color-font-paragrafo-light: #a5a9ae;
 }
 
 .center {
@@ -90,9 +91,16 @@ h2 {
 
 .flex-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: center; 
     flex-wrap: wrap;
+}
+
+.flex-container-justify-center {
+    justify-content: center;
+}
+
+.flex-container-align-items {
+    justify-content: flex-start;
 }
 
 .flex-container-grap {
@@ -126,7 +134,6 @@ h2 {
 .flex-item-4 {
     flex: 1 1 calc(25% - 50px); 
     box-sizing: border-box;
-    text-align: center;
 }
 
 .flex-item-header  {

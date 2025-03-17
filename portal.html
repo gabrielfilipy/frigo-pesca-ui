@@ -1,0 +1,129 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição breve da página">
+    <meta name="author" content="Minimals Tecnologia da Informacao">
+    <meta name="keywords" content="palavras-chave, separadas, por, vírgulas">
+    <title>Frigo Pesca</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/portal.css">
+    <!--CSS-->
+
+    <!--ICONS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!--ICONS-->
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="flex-container">
+
+                <div class="flex-item-header">
+                    <a class="link" onclick="home()">
+                        <img src="https://frigopesca.com/img/logo.png" alt="Logo" style="height: 40px;">
+                    </a>
+                </div><!--flex-item-->
+
+                <div class="flex-item-header">
+                    <nav class="menu-desktop">
+                        <a onclick="home()">Home</a>
+                        <a onclick="products()">Produtos</a>
+                        <a onclick="contact()">Contato</a>
+                    </nav>
+
+                    <div class="mobile-menu-icon" onclick="toggleMenu()">
+                        &#9776;
+                    </div>
+                </div><!--flex-item-->
+
+            </div><!--flex-container-->
+        </div><!--container-->
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a onclick="home()">Home</a>
+        <a onclick="products()">Produtos</a>
+        <a onclick="contact()">Contato</a>
+    </div>
+
+    <main>
+        <div class="container">
+            <h2 class="title"><span class="bordered">Bl</span>og</h2>
+            <div class="portal">
+                <div class="flex-container flex-container-grap">
+                    <div class="flex-item">
+                        <div class="banner">
+                            <a class="link" onclick="post(5)">
+                                <img src="https://neon.com.br/aprenda/wp-content/uploads/2023/12/metas-para-proximo-ano.png" alt="">
+                                <h1>VENDAS</h1>
+                                <p>Meta Financeira Batida: O Que Aprendi e Como Você Também Pode Chegar Lá</p>
+                            </a>
+                        </div><!--banner-->
+                    </div><!--flex-item-->
+
+                    <div class="flex-item">
+                        <div class="banner">
+                            <a class="link" onclick="post(3)">
+                                <img src="https://blog.archtrends.com/wp-content/uploads/2023/05/Sustentabilidadeambiental.jpeg" alt="">
+                                <h1>SUSTENTABILIDADE</h1>
+                                <p>Sustentabilidade na Pesca: O Compromisso da Frigo Pesca com o Futuro dos Oceanos</p>
+                            </a>
+                        </div><!--banner-->
+                    </div><!--flex-item-->
+                </div><!--flex-container-->
+
+                <div class="flex-container flex-container-grap portal-top">
+                    <div class="flex-item-4">
+                        <div class="banner">
+                            <a class="link" onclick="post(1)">
+                                <img src="https://sismmac.org.br/wp-content/uploads/2024/03/Dia-da-mulher-Sismmac-2024.jpg" alt="">
+                                <h1>COMEMORACAO</h1>
+                                <p>Mulheres que Inspiram nossa vida: A Força Feminina que Move o Mundo</p>
+                            </a>
+                        </div><!--banner-->
+                    </div><!--flex-item-->
+
+                    <div class="flex-item-4">
+                        <div class="banner">
+                            <a class="link" onclick="post(2)">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTZxgXZn-KSRUCHb_RiK3bAg_tSjO76JQZ0w&s" alt="">
+                                <h1>HISTÓRIA</h1>
+                                <p>Nossa história: Com todo orgulho compartilhamos sobre nossa tragetória até aqui</p>
+                            </a>
+                        </div><!--banner-->
+                    </div><!--flex-item-->
+
+                    <div class="flex-item-4">
+                        <div class="banner">
+                            <a class="link" onclick="post(3)">
+                                <img src="https://s2-g1.glbimg.com/mRq1XukGZF_ACmSsVjkC2epcCVs=/0x0:2121x1414/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/m/D/DFYKn5QbSfiHCv21vUTA/foto-1-destaque-g1-unifor-design-grafico-e-digital.jpg" alt="">
+                                <h1>ANUNCIO</h1>
+                                <p>Oportunidade de emprego para Design Gráfico: Venha trabalhar conosco</p>
+                            </a>
+                        </div><!--banner-->
+                    </div><!--flex-item-->
+
+                    <div class="flex-item-4">
+                        <div class="banner">
+                            <a class="link" onclick="post(4)">
+                                <img src="https://i.ytimg.com/vi/uIRh6rpOO4k/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBZIBWnhqsNZH-i1BQkGAP02Yqs8g" alt="">
+                                <h1>PALESTRA</h1>
+                                <p>O segredo de uma empresa de sucesso: Teremos uma palestra com Fred Gelli</p>
+                            </a>
+                        </div><!--banner-->
+                    </div><!--flex-item-->
+                </div><!--flex-container-->
+
+            </div><!--portal-->
+        </div><!--container-->
+    </main>
+
+</body>
+
+<script src="js/rooter.js"></script>
+<script src="js/script.js"></script>
+<script src="js/blog.js"></script>

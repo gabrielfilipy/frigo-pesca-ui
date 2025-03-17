@@ -12,3 +12,7 @@ function products() {
 function contact() {
     window.location.href = "contact.html";
 }
+
+function portal() {
+    window.location.href = "portal.html";
+}
