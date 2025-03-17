@@ -30,9 +30,22 @@
 
                 <div class="flex-item-header">
                     <nav class="menu-desktop">
-                        <a onclick="home()">Home</a>
-                        <a onclick="products()">Produtos</a>
-                        <a onclick="contact()">Contato</a>
+                        <a onclick="home()">INICIO</a>
+                        <div class="menu-item">
+                            <a href="javascript:void(0);">FRIGO PESCA
+                                <span class="arrow" onclick="toggleSubmenu(event)">&#9660;</span>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#">APRESENTAÇÃO</a></li>
+                                <li><a href="#">ESTRUTURA</a></li>
+                                <li><a href="#">HISTÓRIA</a></li>
+                                <li><a href="#">SUSTENTABILIDADE</a></li>
+                                <li><a href="#">POLÍTICA DE GOVERNAÇA ÉTICA E CONDUTA</a></li>
+                            </ul>
+                        </div>
+                        <a onclick="products()">PRODUTOS</a>
+                        <a onclick="receitas()">RECEITAS</a>
+                        <a onclick="contact()">CONTATO</a>
                     </nav>
 
                     <div class="mobile-menu-icon" onclick="toggleMenu()">
@@ -45,9 +58,10 @@
     </header>
 
     <div class="mobile-menu" id="mobileMenu">
-        <a onclick="home()">Home</a>
-        <a onclick="products()">Produtos</a>
-        <a onclick="contact()">Contato</a>
+        <a onclick="home()">INICIO</a>
+        <a onclick="products()">PRODUTOS</a>
+        <a onclick="receitas()">RECEITAS</a>
+        <a onclick="contact()">CONTATO</a>
     </div>
 
     <main>
