@@ -85,15 +85,10 @@
 }
 
 
-  .mosaic-item.show {
+.mosaic-item.show {
     opacity: 1;
     transform: translateX(0); 
-  }
-
-
-
-
-
+}
 
 .flex-item.texto {
     padding-left: 30px;

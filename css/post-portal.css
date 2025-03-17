@@ -43,5 +43,23 @@
     margin-right: 12px;
 }
 
+@media (max-width: 800px) {
+    #post-portal #post-title {
+        font-size: 11px;
+    } 
+
+    #post-portal #post-description {
+        font-size: 14px;
+    } 
+
+    #post-portal #escritor-post {
+        font-size: 8px;
+    }
+
+    #post-portal #foto-escritor {
+        width: 30px;
+        height: 30px;
+    }
+}
 
 
