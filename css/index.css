@@ -160,6 +160,7 @@ h2 {
     width: 100%;
     text-align: right;
     padding: 1px;
+    position: relative;
 }
 
 .menu-desktop a {
@@ -174,6 +175,59 @@ h2 {
 .menu-desktop a:hover {
     background-color: var(--color-gray-light);
     color: var(--color-primary);
+}
+
+.menu-item {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-desktop {
+    position: relative;
+}
+
+.menu-item {
+    position: relative; 
+    display: inline-block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    width: 180px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 0;
+    list-style-type: none;
+}
+
+.submenu li {
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.submenu li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    width: 100%;
+    text-align: left; 
+    padding: 10px;
+}
+
+.submenu li a:hover {
+    background-color: #f0f0f0;
+}
+
+.arrow {
+    margin-left: 5px;
+    font-size: 10px;
+    cursor: pointer; 
 }
 /* Menu desktop */
 

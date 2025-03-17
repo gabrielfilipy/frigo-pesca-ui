@@ -16,3 +16,7 @@ function contact() {
 function portal() {
     window.location.href = "portal.html";
 }
+
+function receitas() {
+    window.location.href = "receitas-apagar.html";
+}

@@ -20,3 +20,24 @@ document.querySelectorAll('.mobile-menu a').forEach(anchor => {
         document.getElementById('mobileMenu').style.display = 'none';
     });
 });
+
+
+function toggleSubmenu(event) {
+    event.stopPropagation();
+
+    const submenu = event.target.closest('.menu-item').querySelector('.submenu');
+
+    if (submenu.style.display === 'block') {
+        submenu.style.display = 'none';
+    } else {
+        submenu.style.display = 'block';
+    }
+}
+
+document.addEventListener('click', function() {
+    const submenus = document.querySelectorAll('.submenu');
+    submenus.forEach(function(submenu) {
+        submenu.style.display = 'none';
+    });
+});
+
