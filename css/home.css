@@ -175,6 +175,10 @@
         padding-right: 5px;
     }
 
+    .mosaic-item {
+        padding: 10px;
+    }
+
 }
 /* Mobile - Menu mobile e flexbox para itens */
 

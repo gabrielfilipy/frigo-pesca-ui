@@ -331,6 +331,15 @@ h2 {
         order: 0;
     }
 
+    .flex-container-grap {
+        gap: 7px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+
     .mobile-menu-icon {
         display: block;
     }
