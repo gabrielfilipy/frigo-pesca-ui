@@ -41,3 +41,42 @@ document.addEventListener('click', function() {
     });
 });
 
+document.getElementById('scroll-link-sust').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.querySelector('.select-sustentabilidade').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('scroll-link-poli').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.querySelector('.select-politica').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('scroll-link-aval').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.querySelector('.select-avaliacoes').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('scroll-link-prod').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.querySelector('.select-produtos').scrollIntoView({ behavior: 'smooth' });
+});
+
+//salvar no localstorage do navegador
+function setScrollTarget(target) {
+    localStorage.setItem('scrollToSection', target);
+}
+
+//Verifica se há algo no localstorage para fazer o scroll no index
+document.addEventListener('DOMContentLoaded', function () {
+    const sectionToScroll = localStorage.getItem('scrollToSection');
+
+    if (sectionToScroll) {
+        const targetElement = document.querySelector('.' + sectionToScroll);
+        if (targetElement) {
+            setTimeout(() => {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }, 500);
+        }
+        localStorage.removeItem('scrollToSection');
+    }
+});

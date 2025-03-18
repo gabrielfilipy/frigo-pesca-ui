@@ -32,16 +32,15 @@
                 <div class="flex-item-header">
                     <nav class="menu-desktop">
                         <a onclick="home()">INICIO</a>
-                        <div class="menu-item">
+                        <div class="menu-item" onclick="toggleSubmenu(event)">
                             <a href="javascript:void(0);">FRIGO PESCA
-                                <span class="arrow" onclick="toggleSubmenu(event)">&#9660;</span>
+                                <span class="arrow" >&#9660;</span>
                             </a>
                             <ul class="submenu">
-                                <li><a href="#">APRESENTAÇÃO</a></li>
-                                <li><a href="#">ESTRUTURA</a></li>
-                                <li><a href="#">HISTÓRIA</a></li>
-                                <li><a href="#">SUSTENTABILIDADE</a></li>
-                                <li><a href="#">POLÍTICA DE GOVERNAÇA ÉTICA E CONDUTA</a></li>
+                                <li><a href="index.html" onclick="setScrollTarget('select-sustentabilidade')">SUSTENTABILIDADE</a></li>
+                                <li><a href="index.html" onclick="setScrollTarget('select-politica')">POLÍTICA DE GOVERNANÇA</a></li>
+                                <li><a href="index.html" onclick="setScrollTarget('select-avaliacoes')">AVALIAÇÕES</a></li>
+                                <li><a href="index.html" onclick="setScrollTarget('select-produtos')">PRODUTOS</a></li>
                             </ul>
                         </div>
                         <a onclick="products()">PRODUTOS</a>

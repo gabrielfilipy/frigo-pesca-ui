@@ -29,18 +29,17 @@
                 </div><!--flex-item-->
 
                 <div class="flex-item-header">
-                    <nav class="menu-desktop">
+                    <nav class="menu-desktop" >
                         <a onclick="home()">INICIO</a>
-                        <div class="menu-item">
+                        <div class="menu-item" onclick="toggleSubmenu(event)">
                             <a href="javascript:void(0);">FRIGO PESCA
-                                <span class="arrow" onclick="toggleSubmenu(event)">&#9660;</span>
+                                <span class="arrow" >&#9660;</span>
                             </a>
                             <ul class="submenu">
-                                <li><a href="#">APRESENTAÇÃO</a></li>
-                                <li><a href="#">ESTRUTURA</a></li>
-                                <li><a href="#">HISTÓRIA</a></li>
-                                <li><a href="#">SUSTENTABILIDADE</a></li>
-                                <li><a href="#">POLÍTICA DE GOVERNAÇA ÉTICA E CONDUTA</a></li>
+                                <li><a href="#" id="scroll-link-sust">SUSTENTABILIDADE</a></li>
+                                <li><a href="#" id="scroll-link-poli">POLÍTICA DE GOVERNAÇA ÉTICA E CONDUTA</a></li>
+                                <li><a href="#" id="scroll-link-aval">AVALIAÇÕES</a></li>
+                                <li><a href="#" id="scroll-link-prod">PRODUTOS</a></li>
                             </ul>
                         </div>
                         <a onclick="products()">PRODUTOS</a>
@@ -115,7 +114,7 @@
             <div class="mosaic">
                 <div class="mosaic-item">
                     <div class="flex-container">
-                        <div class="flex-item texto">
+                        <div class="flex-item texto select-sustentabilidade">
                             <h2><span class="bordered">Sus</span>tentabilidade</h2>
                             <p>Esta é a premissa do grupo Bom Peixe, que acredita na responsabilidade das empresas para
                                 com a comunidade e o planeta, por isso investe em um programa interno que visa à
@@ -140,7 +139,7 @@
                             <img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2019/10/business_with_esa/21093947-3-eng-GB/Business_with_ESA_pillars.jpg"
                                 alt="">
                         </div><!--flex-item-->
-                        <div class="flex-item texto">
+                        <div class="flex-item texto select-politica">
                             <h2><span class="bordered">Polí</span>tica de Governança Ética e Conduta</h2>
                             <p>Nossa política de governança garante nosso compromisso com a melhoria contínua das
                                 atividades, as padronizações dos processos, a gestão de indicadores e o planejamento de
@@ -156,7 +155,7 @@
 
                 <div class="mosaic-item">
                     <div class="flex-container">
-                        <div class="flex-item texto">
+                        <div class="flex-item texto select-produtos">
                             <h2><span class="bordered">Pro</span>dutos</h2>
                             <p>Temos uma linha completa de produtos para todos os gostos. Conheça nossos produtos.</p>
                             <button onclick="products()">SAIBA MAIS</button>
@@ -169,7 +168,7 @@
 
             </div><!--mosaic-->
 
-            <div class="testimonials">
+            <div class="testimonials select-avaliacoes">
                 <div class="comentarios">
                     <img src="img/icon-comentario.png" alt="">
                     <h2>Depoimentos de nossos clientes</h2>
