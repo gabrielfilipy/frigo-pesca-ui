@@ -60,6 +60,7 @@ h2 {
 }
 
 .banner {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
     width: 100%;
     padding: 20px;
     background-color: white;
@@ -104,7 +105,7 @@ h2 {
 }
 
 .flex-container-grap {
-    gap: 7px;
+    gap: 40px;
 }
 
 .flex-item-img {
